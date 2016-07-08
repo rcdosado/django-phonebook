@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+    {% block content %}
+        <div class="contact">
+            {% if contact %}
+                <p>
+                   Name is <h4>{{ contact.last_name }}, {{ contact.first_name }}</h4>
+                   lives in <h4>{{ contact.address}}</h4>
+                   Email address is <h4>{{ contact.email }}</h4>
+                </p>
+            {% else %}
+                   <p>
+                       Phone book is empty dude.
+                   </p>
+            {% endif%}
+
+        </div>
+    {% endblock %}

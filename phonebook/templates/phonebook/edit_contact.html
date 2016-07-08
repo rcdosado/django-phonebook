@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+  {% block content %}
+    <h1>Add Contact</h1>
+    <form action="{% url "contacts-new" %}" method="POST">
+        {% csrf_token %}
+            {{ create_contact_form.as_ul }}
+        <input id="save_contact" type="submit" value="Save" />
+    </form>
+  {% endblock %}

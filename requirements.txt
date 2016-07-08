@@ -1,0 +1,5 @@
+Django==1.8
+django-debug-toolbar==1.4
+django-material==0.8.0
+sqlparse==0.1.19
+wheel==0.26.0
